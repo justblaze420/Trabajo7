@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <!--- form --->
+    <form action="registro.html" method="get" onsubmit="return verificarContrasenas()">
+        <label>Nombre:</label><input type="text" name="Nombre"><br>
+        <label>Apellidos:</label><input type="text" name="Apellidos"><br>
+        <label>Correo:</label><input type="email" name="Correo" required><br>
+        <label>Fecha de Nacimiento:</label><input type="date" name="FechaNacimiento" required><br>
+        <label>Teléfono:</label><input type="tel" name="Telefono" required><br>
+        <label>Username:</label><input type="text" name="user"><br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" required>
+        <br>
+        <label for="repetirContrasena">Repetir Contraseña:</label>
+        <input type="password" id="repetirContrasena" required>
+        <br>
+        <span id="mensajeError" style="color: red;"></span>
+        <br>
+        <a href="registro.html"><input type="submit" name="subir" value="Registrar"></a>
+        
+    </form>
+        <a href="index.html"><button>Regresar</button></a>
+
+    <img src="shaq.png" alt="" height="300px" class="mover-derecha">
+
+    <style>
+        @keyframes moverderecha {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(100px);
+                /* Cambia el valor según la distancia que desees */
+            }
+        }
+
+        .mover-derecha {
+            animation: moverderecha 0.7s ease-in-out infinite alternate;
+            /* Cambia la duración y el estilo de la animación según tus necesidades */
+        }
+    </style>
+    
+    <h6>©Robbie Daniel Mejia Arroyo</h6>
+</body>
+
+</html>
